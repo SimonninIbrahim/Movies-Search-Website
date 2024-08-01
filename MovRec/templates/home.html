@@ -1,0 +1,7 @@
+<h1> Home page </h1>
+
+<ul>
+    {% for Movie in movies %}
+    <li>{{Movie.title}} ({{Movie.year}}) - {{Movie.runtime}} - [{{Movie.genre}}] <img src="{{Movie.poster}}" class="card-img-top" alt="" width="110" height="160"></li>
+    {% endfor %}
+</ul>
